@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/twitter_blue_30"
     tools:context=".ComposeActivity">
 
 
@@ -28,8 +29,9 @@
             android:gravity="start|top"
             android:hint="What's happening?"
             android:inputType="textMultiLine"
-            android:minLines="5" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:minLines="5"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <!--    <EditText-->
@@ -53,5 +55,6 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="5dp"
+        android:background="@color/twitter_blue_50"
         android:text="@string/tweet" />
 </RelativeLayout>
