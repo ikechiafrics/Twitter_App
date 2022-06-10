@@ -7,4 +7,11 @@
         android:icon="@android:drawable/ic_menu_edit"
         android:title="Compose"
         app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/logoutBtn"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Logout"
+        app:showAsAction="always" />
+
 </menu>

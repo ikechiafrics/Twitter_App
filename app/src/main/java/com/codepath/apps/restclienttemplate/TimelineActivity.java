@@ -45,7 +45,7 @@ public class TimelineActivity extends AppCompatActivity {
     RecyclerView rvTweets;
     List<Tweet> tweets;
     TweetsAdapter adapter;
-    Button LogOutBtn;
+//    Button LogOutBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,13 +62,13 @@ public class TimelineActivity extends AppCompatActivity {
 
         client= TwitterApp.getRestClient(this);
 
-        LogOutBtn = (Button) findViewById(R.id.logOutBtn);
-        LogOutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onLogoutButton();
-            }
-        });
+//        LogOutBtn = (Button) findViewById(R.id.logOutBtn);
+//        LogOutBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                onLogoutButton();
+//            }
+//        });
 
         //Find the recycler view
         rvTweets = findViewById(R.id.rvTweets);
@@ -127,6 +127,10 @@ public class TimelineActivity extends AppCompatActivity {
             //Navigate to the compose activity
             Intent intent = new Intent(this, ComposeActivity.class);
             startActivityForResult(intent, REQUEST_CODE);
+            return true;
+        }
+        else if(item.getItemId() == R.id.logoutBtn){
+            onLogoutButton();
             return true;
         }
         return super.onOptionsItemSelected(item);
