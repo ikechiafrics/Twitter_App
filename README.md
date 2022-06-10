@@ -54,6 +54,7 @@ GIF created with [Kap](https://getkap.co/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+Getting image URL's drom entities
 
 ## Open-source libraries used
 
