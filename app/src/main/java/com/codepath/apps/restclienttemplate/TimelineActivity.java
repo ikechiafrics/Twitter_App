@@ -129,7 +129,8 @@ public class TimelineActivity extends AppCompatActivity {
             startActivityForResult(intent, REQUEST_CODE);
             return true;
         }
-        else if(item.getItemId() == R.id.logoutBtn){
+        else
+            if(item.getItemId() == R.id.logoutBtn){
             onLogoutButton();
             return true;
         }
